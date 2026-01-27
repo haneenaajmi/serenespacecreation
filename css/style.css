@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    /* font-family: "Brush Script MT", "Lucida Handwriting", cursive; */
+
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #a48e71;
+    color: #fff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: url("https://i.pinimg.com/736x/13/57/fb/1357fbe63e74ffe49c8e898b1e7c31e1.jpg") center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero txt {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    background: #a48e71;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* About Us starts*/
+
+/* Desktop layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Common section styling */
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Top aligned */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Column ratios */
+.one {
+    flex: 1;
+    /* 1 */
+    color: #333232;
+    flex-direction: column;
+    padding-left: 25px;
+    align-items: flex-start;
+    text-align: left;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+}
+
+.two {
+    flex: 1;
+    /* 1 */
+    flex-direction: column;
+    padding-top: 80px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.three {
+    flex: 2;
+    /* 2 (widest) */
+    padding: 120px 180px 30px 180px;
+    align-items: stretch;
+}
+
+/* Middle content */
+.two h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.two p {
+    font-size: 18px;
+    max-width: 400px;
+}
+
+/* Image */
+.three img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========================= */
+/* Responsive (Mobile) */
+/* ========================= */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section1 {
+        min-height: 60vh;
+        padding: 30px 20px;
+        text-align: left;
+    }
+
+    .three {
+        padding: 20px;
+    }
+
+    .two h2 {
+        font-size: 26px;
+    }
+
+    .two p {
+        font-size: 16px;
+    }
+}
+
+/* About Us ends here */
+
+
+
+
+
+/* Sections */
+.section {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.gray {
+    background: #f4f4f4;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio starts here */
+
+/* .portfolio {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio {
+    background: #eee;
+    padding: 40px;
+    width: 200px;
+} */
+
+/* portfoilio section */
+/* ========================= */
+/* Circle Showcase Section */
+/* ========================= */
+
+.circle-section {
+    padding: 100px 80px;
+    background-color: #fff;
+}
+
+/* Center heading */
+.center-heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Left-aligned sub heading */
+.sub-heading {
+    max-width: 600px;
+    font-size: 20px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+/* Circle layout */
+.circle-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Individual item */
+.circle-item {
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Circle image */
+.circle-item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect */
+.circle-item:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Text below circle */
+.circle-item span {
+    display: block;
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+@media (max-width: 768px) {
+    .circle-section {
+        padding: 70px 20px;
+    }
+
+    .center-heading {
+        font-size: 30px;
+    }
+
+    .circle-wrapper {
+        justify-content: center;
+    }
+
+    .sub-heading {
+        text-align: left;
+    }
+}
+
+/* portfolio ends here */
+
+
+
+
+/* Service starts here */
+
+/* service section */
+/* ========================= */
+/* Cards Section */
+/* ========================= */
+
+.card-section {
+    padding: 100px 80px;
+    background-color: #f6f6f6;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Card */
+.design-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+/* Card title */
+.design-card h3 {
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Image */
+.design-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Hover effect */
+.design-card:hover {
+    background-color: #a48e71;
+    transform: translateY(-8px);
+}
+
+.design-card:hover h3 {
+    color: #fff;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+@media (max-width: 1024px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-section {
+        padding: 60px 20px;
+    }
+}
+
+/* service ends here */
+
+
+
+
+
+/* contact us starts here next page*/
+
+
+/* ========================= */
+/* Contact Section */
+/* ========================= */
+
+.contact-section {
+    padding: 120px 80px;
+    background-color: #f7f7f7;
+}
+
+/* Common header */
+.contact-header {
+    max-width: 1500px;
+    margin-bottom: 80px;
+}
+
+.contact-header h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contact-header p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-sub {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+/* Layout */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 60px;
+}
+
+/* Left bottom */
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.get-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+/* Social icons */
+.contact-icons {
+    margin-top: 12px;
+    display: flex;
+    gap: 16px;
+}
+
+.contact-icons img {
+    width: 22px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-icons a:hover img {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+/* Right form */
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.contact-right textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.contact-right button {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #a48e71;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-right button:hover {
+    background-color: #333;
+}
+
+/* Dropdown style */
+.contact-right select {
+    padding: 14px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background-color: #fff;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Optional custom arrow (clean & minimal) */
+.contact-right select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='none' stroke='%23666' stroke-width='2' d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+/* Match inputs */
+.contact-right input,
+.contact-right textarea,
+.contact-right select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 80px 20px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+/* contact ends here (next page) */
+
+
+/* Contact */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    width: 100%;
+}
+
+form button {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+
+/* Footer starts here */
+/* ========================= */
+/* Footer */
+/* ========================= */
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 70px 80px 30px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+/* Logo */
+.footer-logo {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.footer-logo span {
+    color: #c9a14a;
+}
+
+/* Footer columns */
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-col p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #ccc;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Contact title spacing */
+.contact-title {
+    margin-top: 20px;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 22px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Bottom bar */
+.footer-bottom {
+    text-align: left;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+@media (max-width: 768px) {
+    .footer {
+        padding: 60px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+}
+
+/* footer ends here */
