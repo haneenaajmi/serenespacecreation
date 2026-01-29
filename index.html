@@ -19,7 +19,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +30,7 @@
             Every details </h1>
         <p class="text">LET'S BRING YOUR VISION TO LIFE</p>
         <!-- <button onclick="scrollToContact()">Get a Quote</button> -->
-    </section>
+    </section><br>
 
     <!-- About -->
     <!-- <section id="about" class="section"> -->
@@ -69,7 +69,7 @@
 
     <!-- Services -->
     <!-- Cards Section -->
-    <section class="card-section">
+    <section id="services" class="card-section">
         <h2 class="center-heading">Our Services</h2>
         <div class="card-grid">
 
@@ -101,44 +101,57 @@
 
 
     <!-- Portfolio starts here -->
-    <section class="circle-section">
-        <h2 class="center-heading">Designing Spaces:<br>Defining Styles</h2>
+    <section id="portfolio" class="circle-section">
+        <h2 class="center-heading">Portfolio</h2>
 
+        <h2 class="center-heading">Designing Spaces:<br>Defining Styles</h2>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using LoremIt is a long established fact that a reader will be
+            distracted by the readable content of a page when looking at its layout. The point of using
+        </p><br>
         <p class="sub-heading">
-            Browse by category
+            <b>Browse by category:</b>
         </p>
 
         <div class="circle-wrapper">
-            <div class="circle-item">
-                <img src="https://images.woodenstreet.de/image/data/Looks/1.jpg" alt="Living Room">
-                <span>Living Room</span>
-            </div>
+            <a href="livingroom.html">
+                <div class="circle-item">
+                    <img src="https://images.woodenstreet.de/image/data/Looks/1.jpg" alt="Living Room">
+            </a>
+            <span>Living Room</span>
+        </div>
 
-            <div class="circle-item">
-                <img src="https://tse2.mm.bing.net/th/id/OIP.Z9XwvsTQ9cCa5XLZ2Nt-dwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
-                    alt="Bedroom">
-                <span>Bedroom</span>
-            </div>
+        <div class="circle-item">
+            <a href="bedroom.html">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.Z9XwvsTQ9cCa5XLZ2Nt-dwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Bedroom"></a>
+            <span>Bedroom</span>
+        </div>
 
-            <div class="circle-item">
-                <img src="https://i.pinimg.com/originals/9d/14/a4/9d14a429de93108e6c5a0d37e168a734.jpg" alt="Kitchen">
-                <span>Kitchen</span>
-            </div>
+        <div class="circle-item">
+             <a href="kitchen.html">
+            <img src="https://i.pinimg.com/originals/9d/14/a4/9d14a429de93108e6c5a0d37e168a734.jpg" alt="Kitchen"></a>
+            <span>Kitchen</span>
+        </div>
 
-            <div class="circle-item">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.au8aAqwYLqPbGwknMszenwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
-                    alt="Dining">
-                <span>Dining</span>
-            </div>
+        <div class="circle-item">
+             <a href="dining.html">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.au8aAqwYLqPbGwknMszenwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Dining"></a>
+            <span>Dining</span>
+        </div>
 
-            <div class="circle-item">
-                <img src="https://i.pinimg.com/originals/04/40/25/0440257324718ef741936039654ec508.jpg" alt="Bathroom">
-                <span>Bathroom</span>
-            </div>
-            <div class="circle-item">
-                <img src="https://i.pinimg.com/736x/d1/b8/59/d1b859af15dbadc106a9dfebec90fd6d.jpg" alt="Office">
-                <span>Office</span>
-            </div>
+        <div class="circle-item">
+             <a href="bathroom.html">
+            <img src="https://i.pinimg.com/originals/04/40/25/0440257324718ef741936039654ec508.jpg" alt="Bathroom"></a>
+            <span>Bathroom</span>
+        </div>
+        <div class="circle-item">
+            <a href="office.html">
+            <img src="https://i.pinimg.com/736x/d1/b8/59/d1b859af15dbadc106a9dfebec90fd6d.jpg" alt="Office"></a>
+            <span>Office</span>
+        </div>
         </div>
     </section>
     <!-- portfolio ends here -->
@@ -146,7 +159,7 @@
 
 
     <!-- Contact -->
-    <!-- <section id="contact" class="section gray">
+    <section id="contact" class="section gray">
         <h2 class="center-heading">Contact Us</h2>
         <form id="contactForm">
             <input type="text" placeholder="Your Name" required>
@@ -155,67 +168,7 @@
             <button type="submit">Send Message</button>
         </form>
         <p id="formMessage"></p>
-    </section> -->
-
-    <!-- Contact Section -->
-    <section class="contact-section">
-
-        <!-- Common Heading Content -->
-        <div class="contact-header">
-            <h2>Contact Us</h2>
-            <p>
-                We craft elegant and functional interior spaces tailored to your lifestyle.
-                Let’s discuss how we can bring your vision to life. There are many variations of passages of Lorem Ipsum
-                available, but the majority have suffered alteration in some form, by injected humour, or randomised
-                words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
-                need to be sure
-            </p>
-            <span class="contact-sub">Interested parties are encouraged to reach out today to embark on a collaborative
-                journey.</span>
-        </div>
-
-        <div class="contact-container">
-
-            <!-- Left Bottom -->
-            <div class="contact-left">
-                <span class="get-title">Get in touch</span>
-                <p>We are here to answer any queastion you may have, feel free to reach via contact form</p>
-                <div class="contact-icons">
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="WhatsApp"></a>
-                </div>
-            </div>
-
-            <!-- Right Form -->
-            <div class="contact-right">
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-
-                    <!-- Type of Query Dropdown -->
-                    <select required>
-                        <option value="">Type of Query</option>
-                        <option value="interior-design">Interior Design</option>
-                        <option value="consultation">Consultation</option>
-                        <option value="project-estimate">Project Estimate</option>
-                        <option value="career">Career</option>
-                        <option value="other">Other</option>
-                    </select>
-
-                    <input type="text" placeholder="Phone Number">
-                    <input type="text" placeholder="Company Name">
-                    <textarea placeholder="How can we help you"></textarea>
-                    <button type="submit">Send Message</button>
-                    
-                </form>
-
-            </div>
-
-        </div>
     </section>
-    <!-- contact us ends here -->
 
 
     <!-- Footer starts here -->
@@ -225,15 +178,17 @@
             <!-- Column 1: Logo -->
             <div class="footer-col logo-col">
                 <h2 class="footer-logo">SereneSpaceCreation</h2>
+                <span class="contact-sub">sculpting spaces, sealing serenity</span>
             </div>
 
             <!-- Column 2: Quick Access -->
             <div class="footer-col">
                 <h4>Quick Access</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Designs</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li><a href="#">Designs</a></li> -->
                     <li><a href="#">Careers</a></li>
                 </ul>
             </div>
@@ -248,7 +203,7 @@
 
                 <div class="social-icons">
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/serenespacecreations"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="WhatsApp"></a>
                 </div>
@@ -264,6 +219,7 @@
 
     <script src="javascript.js"></script>
     <script src="javascript\portfolio-circle.js"></script>
+    <script src="javascript\image-slider.js"></script>
 </body>
 
 </html>
